@@ -1,0 +1,19 @@
+<section class="authorization-section">
+  <div class="image-block">
+    <img src="../src/assets/images/profit-image.png" alt="profit-image.png">
+  </div>
+  <div class="authorization-block">
+    <div class="authorization-card">
+      <div class="card flex justify-content-center">
+        <p-selectButton [options]="stateOptions" [(ngModel)]="choseSign" optionLabel="label" optionValue="value"></p-selectButton>
+      </div>
+      <ng-container *ngIf="choseSign === 'signIn'; else signUp">
+        <app-sign-in></app-sign-in>
+      </ng-container>
+
+      <ng-template #signUp>
+        <app-sign-up></app-sign-up>
+      </ng-template>
+    </div>
+  </div>
+</section>
