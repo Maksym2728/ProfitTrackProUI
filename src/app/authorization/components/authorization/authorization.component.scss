@@ -1,0 +1,18 @@
+.authorization-section {
+  display: flex;
+  width: 100%;
+
+  .image-block {
+    min-width: 50%;
+    height: 100vh
+  }
+
+  .authorization-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 50%;
+    background-color: green;
+
+  }
+}
